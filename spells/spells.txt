@@ -1,0 +1,56 @@
+BORDER=RECTANGLE
+UNIT=CM
+PAGE=21,29.7,PORTRAIT,HV
+DPI=300
+CARDSIZE=6,9
+BASERANGE=,ON
+
+ICON = ,T, ../icos/temp.png
+ICON = ,P, ../icos/perm.png
+
+ICON = ,U, ../manas/blue.png
+ICON = ,B, ../manas/black.png
+ICON = ,R, ../manas/red.png
+ICON = ,G, ../manas/green.png
+ICON = ,W, ../manas/white.png
+ICON = ,1, ../manas/x1.png
+ICON = ,2, ../manas/x2.png
+ICON = ,3, ../manas/x3.png
+
+HTMLIMAGE = ,(A), ../manas/any.png,   0.3,0.3,P
+HTMLIMAGE = ,(U), ../manas/blue.png,  0.3,0.3,P
+HTMLIMAGE = ,(B), ../manas/black.png, 0.3,0.3,P
+HTMLIMAGE = ,(R), ../manas/red.png,   0.3,0.3,P
+HTMLIMAGE = ,(G), ../manas/green.png, 0.3,0.3,P
+HTMLIMAGE = ,(W), ../manas/white.png, 0.3,0.3,P
+
+HTMLIMAGE = ,(BX), ../manas/blackX.png, 0.3,0.3,P
+HTMLIMAGE = ,(RX), ../manas/redX.png,   0.3,0.3,P
+
+LinkMulti = N
+LINK="1p9SwcwWT_yS71q6mwMjgw2Lm1soagckEzQF_PFRD_dw"
+VISUAL=, 10, 10
+;BACKGROUND
+IMAGE="1-{(BACKGROUND)}",[BACKGROUND],0%,0%,100%,100%,0,PT
+FONT=Arial,10,T,#000000
+;NAME
+TEXT="1-{(NAME)}",[NAME],9.5%,9%,54%,{23/6}%,LEFT,CENTER
+ICONS="1-{(Cost)}",[Cost],68.75%,{53/6}%,21.75%,{13/3}%,5%,5%,0,TP,RIGHT,CENTER
+;IMAGE
+IMAGE="1-{(IMAGE)}",[IMAGE],9%,14.5%,81.75%,40.5%
+FONT=Arial,8,T,#000000
+;TYPE
+TEXT="1-{(TYPE)}",[TYPE],9.5%,{337/6}%,67%,{23/6}%,LEFT,CENTER
+HTMLFONT=fnt1,arial,8,,#000000
+HTMLTEXT="1-{(RULES)}",[RULES],10.75%,63%,77.25%,{68/3}%,#FFFFFF,0,T,100,fnt1
+FONT=Arial,11,T,#000000
+CIRCLE=,79.75%,{505/6}%,13%,{25/3}%,#B5B5B5
+;CREATURE
+TEXT="1-{(CREATURE)}",[CREATURE],82.5%,86%,8%,{31/6}%,CENTER,CENTER
+CIRCLE=,6%,{505/6}%,13%,{25/3}%,#B5B5B5
+;DURATION
+ICONS="1-{(DURATION)}",[DURATION],7.5%,{509/6}%,10%,{41/6}%,5%,5%,0,TNWH,RIGHT,CENTER
+ENDVISUAL
+
+;DISPLAY="filename", starting card, ending card, width, range
+DISPLAY = "spells.png",,,10
