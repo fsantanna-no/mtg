@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="107cm" height="67cm" viewBox="-3042 -782 2123 1323" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs/>
+  <g id="Segundo Plano">
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-3040" y="-60" width="280" height="600" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2900" y="-24.203">
+      <tspan x="-2900" y="-24.203">Combat</tspan>
+      <tspan x="-2900" y="-10.0919">------------</tspan>
+      <tspan x="-2900" y="4.01922"></tspan>
+      <tspan x="-2900" y="18.1303">= 1. Creature Order =</tspan>
+      <tspan x="-2900" y="32.2414"></tspan>
+      <tspan x="-2900" y="46.3525">- Order your creatures by</tspan>
+      <tspan x="-2900" y="60.4637">(i) temporary to permanent</tspan>
+      <tspan x="-2900" y="74.5748">(ii) weak to strong (base strength)</tspan>
+      <tspan x="-2900" y="88.6859">(iii) choose as a tie breaker</tspan>
+      <tspan x="-2900" y="102.797"></tspan>
+      <tspan x="-2900" y="116.908">= 2. Spells &amp; Abilities =</tspan>
+      <tspan x="-2900" y="131.019"></tspan>
+      <tspan x="-2900" y="145.13">- cast support spells &amp; abilities</tspan>
+      <tspan x="-2900" y="159.241">- they do not affect the order</tspan>
+      <tspan x="-2900" y="173.353"></tspan>
+      <tspan x="-2900" y="187.464">= 3. Hit Points =</tspan>
+      <tspan x="-2900" y="201.575"></tspan>
+      <tspan x="-2900" y="215.686">- YOUR: sum of strength and</tspan>
+      <tspan x="-2900" y="229.797">damage of your creatures and spells</tspan>
+      <tspan x="-2900" y="243.908">- MONSTER: its strength</tspan>
+      <tspan x="-2900" y="258.019"></tspan>
+      <tspan x="-2900" y="272.13">= 4. Damage =</tspan>
+      <tspan x="-2900" y="286.241"></tspan>
+      <tspan x="-2900" y="300.353">- sum in order each creature's strength</tspan>
+      <tspan x="-2900" y="314.464">and compare with the monster's</tspan>
+      <tspan x="-2900" y="328.575"></tspan>
+      <tspan x="-2900" y="342.686">- dead creatures: all with sum &lt;= monster</tspan>
+      <tspan x="-2900" y="356.797">- dead monster: if strength &lt;= sum</tspan>
+      <tspan x="-2900" y="370.908"></tspan>
+      <tspan x="-2900" y="385.019">= 5. Casualities =</tspan>
+      <tspan x="-2900" y="399.13"></tspan>
+      <tspan x="-2900" y="413.241">- move to the graveyard all dead creatures</tspan>
+      <tspan x="-2900" y="427.353">- the remaining creatures are not affected at all</tspan>
+      <tspan x="-2900" y="441.464">- if the monster is still alive, its strength is</tspan>
+      <tspan x="-2900" y="455.575">reduced to its remaining strength</tspan>
+      <tspan x="-2900" y="469.686"></tspan>
+      <tspan x="-2900" y="483.797">= 6. Spells &amp; Abilities= </tspan>
+      <tspan x="-2900" y="497.908"></tspan>
+      <tspan x="-2900" y="512.019">- cast support spells &amp; abilities</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-2460" y="-60" width="200" height="240" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2360" y="-27.9784">
+      <tspan x="-2360" y="-27.9784">Move</tspan>
+      <tspan x="-2360" y="-13.8673">-----------</tspan>
+      <tspan x="-2360" y="0.243844"></tspan>
+      <tspan x="-2360" y="14.355">- only move to land tiles</tspan>
+      <tspan x="-2360" y="28.4661"></tspan>
+      <tspan x="-2360" y="42.5772">- move at most (MV) tiles</tspan>
+      <tspan x="-2360" y="56.6883"></tspan>
+      <tspan x="-2360" y="70.7994">- move an extra free tile</tspan>
+      <tspan x="-2360" y="84.9105">on your territory</tspan>
+      <tspan x="-2360" y="99.0216"></tspan>
+      <tspan x="-2360" y="113.133">- use 1 mana of the destination</tspan>
+      <tspan x="-2360" y="127.244">color when leaving your territory</tspan>
+      <tspan x="-2360" y="141.355">- its owner adds 1 used mana of</tspan>
+      <tspan x="-2360" y="155.466">the same color</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-2700" y="-220" width="180" height="160" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2610" y="-178.589">
+      <tspan x="-2610" y="-178.589">Move &amp; Combat</tspan>
+      <tspan x="-2610" y="-164.478">-------------------------</tspan>
+      <tspan x="-2610" y="-150.367"></tspan>
+      <tspan x="-2610" y="-136.256">- either move or combat</tspan>
+      <tspan x="-2610" y="-122.145"></tspan>
+      <tspan x="-2610" y="-108.034">- commander and creatures</tspan>
+      <tspan x="-2610" y="-93.9228">stick together.</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-2460" y="-340" width="200" height="240" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2360" y="-307.814">
+      <tspan x="-2360" y="-307.814">Actions</tspan>
+      <tspan x="-2360" y="-293.703">-----------</tspan>
+      <tspan x="-2360" y="-279.592"></tspan>
+      <tspan x="-2360" y="-265.481">= Once =</tspan>
+      <tspan x="-2360" y="-251.37"></tspan>
+      <tspan x="-2360" y="-237.259">- move &amp; combat</tspan>
+      <tspan x="-2360" y="-223.147">- reserve spell</tspan>
+      <tspan x="-2360" y="-209.036"></tspan>
+      <tspan x="-2360" y="-194.925">= Multi =</tspan>
+      <tspan x="-2360" y="-180.814"></tspan>
+      <tspan x="-2360" y="-166.703">- promote mana &amp; land</tspan>
+      <tspan x="-2360" y="-152.592">- cast spell</tspan>
+      <tspan x="-2360" y="-138.481">- sacrifice active spells</tspan>
+      <tspan x="-2360" y="-124.37">- use active spell ability (upkeep?)</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-1580" y="-540" width="280" height="380" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1440" y="-473.092">
+      <tspan x="-1440" y="-473.092">Setup</tspan>
+      <tspan x="-1440" y="-458.981">-----------</tspan>
+      <tspan x="-1440" y="-444.87"></tspan>
+      <tspan x="-1440" y="-430.759">= Initial draws =</tspan>
+      <tspan x="-1440" y="-416.647"></tspan>
+      <tspan x="-1440" y="-402.536">- draw player order</tspan>
+      <tspan x="-1440" y="-388.425">- draw common quests</tspan>
+      <tspan x="-1440" y="-374.314">- draw common spells</tspan>
+      <tspan x="-1440" y="-360.203"></tspan>
+      <tspan x="-1440" y="-346.092">= For each player =</tspan>
+      <tspan x="-1440" y="-331.981"></tspan>
+      <tspan x="-1440" y="-317.87">(use reverse order here)</tspan>
+      <tspan x="-1440" y="-303.759"></tspan>
+      <tspan x="-1440" y="-289.647">- choose a commander color</tspan>
+      <tspan x="-1440" y="-275.536">- choose 1 out of N commanders</tspan>
+      <tspan x="-1440" y="-261.425">- choose starting tower position</tspan>
+      <tspan x="-1440" y="-247.314">- place initial home lands around it and</tspan>
+      <tspan x="-1440" y="-233.203">add corresponding manas to ring</tspan>
+      <tspan x="-1440" y="-219.092">- reserve 1 common spell</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-2200" y="-520" width="260" height="280" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2070" y="-488.981">
+      <tspan x="-2070" y="-488.981">Turns</tspan>
+      <tspan x="-2070" y="-474.87">-----------</tspan>
+      <tspan x="-2070" y="-460.759"></tspan>
+      <tspan x="-2070" y="-446.647">= Pre =</tspan>
+      <tspan x="-2070" y="-432.536"></tspan>
+      <tspan x="-2070" y="-418.425">- remove common spells with your mark</tspan>
+      <tspan x="-2070" y="-404.314">- move mana from used to active</tspan>
+      <tspan x="-2070" y="-390.203">- reserve one common spell</tspan>
+      <tspan x="-2070" y="-376.092"></tspan>
+      <tspan x="-2070" y="-361.981">= Main =</tspan>
+      <tspan x="-2070" y="-347.87"></tspan>
+      <tspan x="-2070" y="-333.759">- perform actions</tspan>
+      <tspan x="-2070" y="-319.647"></tspan>
+      <tspan x="-2070" y="-305.536">= Pos =</tspan>
+      <tspan x="-2070" y="-291.425"></tspan>
+      <tspan x="-2070" y="-277.314">- mark common spells with your color</tspan>
+      <tspan x="-2070" y="-263.203">- move active temporary spells to graveyard</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-2200" y="-180" width="260" height="320" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2070" y="-143.092">
+      <tspan x="-2070" y="-143.092">Spells</tspan>
+      <tspan x="-2070" y="-128.981">---------</tspan>
+      <tspan x="-2070" y="-114.87"></tspan>
+      <tspan x="-2070" y="-100.759">- cast spells move to active spells</tspan>
+      <tspan x="-2070" y="-86.6475"></tspan>
+      <tspan x="-2070" y="-72.5363">- pay the cost at the top right </tspan>
+      <tspan x="-2070" y="-58.4252"></tspan>
+      <tspan x="-2070" y="-44.3141">- spells can be</tspan>
+      <tspan x="-2070" y="-30.203">(i) creatures or sorceries</tspan>
+      <tspan x="-2070" y="-16.0919">(ii) temporary (T) or permanent (P)</tspan>
+      <tspan x="-2070" y="-1.98078"></tspan>
+      <tspan x="-2070" y="12.1303">- creature spels carry a strength</tspan>
+      <tspan x="-2070" y="26.2414">at the bottom right</tspan>
+      <tspan x="-2070" y="40.3526"></tspan>
+      <tspan x="-2070" y="54.4637">- permanent creatures can only</tspan>
+      <tspan x="-2070" y="68.5748">bo cast on your territory</tspan>
+      <tspan x="-2070" y="82.6859"></tspan>
+      <tspan x="-2070" y="96.797">- temporary spells move to graveyard</tspan>
+      <tspan x="-2070" y="110.908">at the end of turn</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-1580" y="-120" width="240" height="240" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1460" y="-80.7586">
+      <tspan x="-1460" y="-80.7586">Land Placement</tspan>
+      <tspan x="-1460" y="-66.6475">------------------------</tspan>
+      <tspan x="-1460" y="-52.5363"></tspan>
+      <tspan x="-1460" y="-38.4252">- must border two tiles in your territory</tspan>
+      <tspan x="-1460" y="-24.3141"></tspan>
+      <tspan x="-1460" y="-10.203">- must border neighbour colors only</tspan>
+      <tspan x="-1460" y="3.90811"></tspan>
+      <tspan x="-1460" y="18.0192">- for each adjacent opponent tile,</tspan>
+      <tspan x="-1460" y="32.1303">promote used -&gt; active</tspan>
+      <tspan x="-1460" y="46.2414">(adjacent colors)</tspan>
+      <tspan x="-1460" y="60.3526"></tspan>
+      <tspan x="-1460" y="74.4637">- If necessary, add tokens to</tspan>
+      <tspan x="-1460" y="88.5748">distinguish between territories</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-1880" y="-340" width="240" height="320" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1760" y="-317.367">
+      <tspan x="-1760" y="-317.367">Mana Ring</tspan>
+      <tspan x="-1760" y="-303.256">----------------</tspan>
+      <tspan x="-1760" y="-289.145"></tspan>
+      <tspan x="-1760" y="-275.034">- setup adds used manas, one</tspan>
+      <tspan x="-1760" y="-260.923">for each home land</tspan>
+      <tspan x="-1760" y="-246.812"></tspan>
+      <tspan x="-1760" y="-232.701">- move active -&gt; used</tspan>
+      <tspan x="-1760" y="-218.589">to pay for actions an spells</tspan>
+      <tspan x="-1760" y="-204.478"></tspan>
+      <tspan x="-1760" y="-190.367">= Mana Promotion =</tspan>
+      <tspan x="-1760" y="-176.256"></tspan>
+      <tspan x="-1760" y="-162.145">- BURN: 2 used -&gt; 1 active</tspan>
+      <tspan x="-1760" y="-148.034"></tspan>
+      <tspan x="-1760" y="-133.923">- LAND: 1 active -&gt; 1 used</tspan>
+      <tspan x="-1760" y="-119.812">(neighbours colors)</tspan>
+      <tspan x="-1760" y="-105.701">place 1 land of used color</tspan>
+      <tspan x="-1760" y="-91.5895"></tspan>
+      <tspan x="-1760" y="-77.4784">- HOME: 1 active -&gt; 2 used home</tspan>
+      <tspan x="-1760" y="-63.3673">(not neighbour colors)</tspan>
+      <tspan x="-1760" y="-49.2562">(used is home color)</tspan>
+      <tspan x="-1760" y="-35.145">place 2 home lands</tspan>
+    </text>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1880" y1="-500" x2="-1929.69" y2="-468.616"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1932.36,-472.843 -1938.15,-463.276 -1927.02,-464.388 "/>
+    </g>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-1200" y="-300" width="280" height="260" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1060" y="-264.87">
+      <tspan x="-1060" y="-264.87">Common Spells</tspan>
+      <tspan x="-1060" y="-250.759">-----------------------</tspan>
+      <tspan x="-1060" y="-236.647"></tspan>
+      <tspan x="-1060" y="-222.536">- setup draws one slot for each player</tspan>
+      <tspan x="-1060" y="-208.425">- players can reserve or cast spells</tspan>
+      <tspan x="-1060" y="-194.314">- draw new cards to fill empty slots</tspan>
+      <tspan x="-1060" y="-180.203"></tspan>
+      <tspan x="-1060" y="-166.092">= Players, Each Turn =</tspan>
+      <tspan x="-1060" y="-151.981"></tspan>
+      <tspan x="-1060" y="-137.87">- Pre: redraw cards with your marks</tspan>
+      <tspan x="-1060" y="-123.759"></tspan>
+      <tspan x="-1060" y="-109.647">- Main: reserve at most 1 card</tspan>
+      <tspan x="-1060" y="-95.5363">swap if needed</tspan>
+      <tspan x="-1060" y="-81.4252"></tspan>
+      <tspan x="-1060" y="-67.3141">- Pos: add marks to empty cards</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-1200" y="-560" width="280" height="240" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1060" y="-527.814">
+      <tspan x="-1060" y="-527.814">Common Quests</tspan>
+      <tspan x="-1060" y="-513.703">-------------------------</tspan>
+      <tspan x="-1060" y="-499.592"></tspan>
+      <tspan x="-1060" y="-485.481">- setup draws 4 quests</tspan>
+      <tspan x="-1060" y="-471.37"></tspan>
+      <tspan x="-1060" y="-457.259">- players complete quests to gain VPs</tspan>
+      <tspan x="-1060" y="-443.147"></tspan>
+      <tspan x="-1060" y="-429.036">- players can complete the same quests:</tspan>
+      <tspan x="-1060" y="-414.925"></tspan>
+      <tspan x="-1060" y="-400.814">- 1st gains 4 VPs</tspan>
+      <tspan x="-1060" y="-386.703">- 2nd gains 2 VPs</tspan>
+      <tspan x="-1060" y="-372.592">- others gain 1 VP</tspan>
+      <tspan x="-1060" y="-358.481"></tspan>
+      <tspan x="-1060" y="-344.37">- game finishes when all quests are completed</tspan>
+    </text>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-1880" y="-660" width="240" height="260" rx="0" ry="0"/>
+    <text font-size="11.2889" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1760" y="-624.87">
+      <tspan x="-1760" y="-624.87">Game Flow</tspan>
+      <tspan x="-1760" y="-610.759">------------------</tspan>
+      <tspan x="-1760" y="-596.647"></tspan>
+      <tspan x="-1760" y="-582.536">= Setup =</tspan>
+      <tspan x="-1760" y="-568.425"></tspan>
+      <tspan x="-1760" y="-554.314">- draw initial cards</tspan>
+      <tspan x="-1760" y="-540.203">- players draft</tspan>
+      <tspan x="-1760" y="-526.092"></tspan>
+      <tspan x="-1760" y="-511.981">= Turns =</tspan>
+      <tspan x="-1760" y="-497.87"></tspan>
+      <tspan x="-1760" y="-483.759">- players take turns</tspan>
+      <tspan x="-1760" y="-469.647"></tspan>
+      <tspan x="-1760" y="-455.536">= Finale =</tspan>
+      <tspan x="-1760" y="-441.425"></tspan>
+      <tspan x="-1760" y="-427.314">- players complete all quests</tspan>
+    </text>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1640" y1="-540" x2="-1588.8" y2="-491.356"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1592.24,-487.731 -1581.55,-484.468 -1585.35,-494.981 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1300" y1="-400" x2="-1211.84" y2="-414.693"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1211.02,-409.761 -1201.98,-416.337 -1212.66,-419.625 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1300" y1="-380" x2="-1209.27" y2="-300.611"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1212.56,-296.848 -1201.74,-294.026 -1205.98,-304.374 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1580" y1="-240" x2="-1628.57" y2="-223.809"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1630.15,-228.553 -1638.06,-220.647 -1626.99,-219.066 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1760" y1="-718.995" x2="-1760" y2="-671.974"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1765,-671.974 -1760,-661.974 -1755,-671.974 "/>
+    </g>
+    <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="-1860" y="-780" width="200" height="60" rx="0" ry="0"/>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-1760" y="-745.569">
+      <tspan x="-1760" y="-745.569">START HERE</tspan>
+    </text>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-2200" y1="-340" x2="-2250.22" y2="-302.332"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-2253.22,-306.332 -2258.22,-296.332 -2247.22,-298.332 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-2460" y1="-240" x2="-2509.86" y2="-206.758"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-2512.64,-210.919 -2518.18,-201.211 -2507.09,-202.598 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-2519.03" y1="-67.2217" x2="-2469.57" y2="-27.6578"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-2472.7,-23.7534 -2461.76,-21.4108 -2466.45,-31.5621 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-2671.82" y1="-58.9972" x2="-2752.32" y2="46.4856"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-2756.29,43.4523 -2758.38,54.4352 -2748.34,49.519 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1640" y1="-120" x2="-1590.14" y2="-86.7633"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1592.92,-82.6031 -1581.82,-81.2163 -1587.37,-90.9236 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1640" y1="-60" x2="-1591.43" y2="-43.8093"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1593.01,-39.0659 -1581.94,-40.647 -1589.85,-48.5527 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-2260" y1="-160" x2="-2209.86" y2="-123.057"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-2212.83,-119.032 -2201.81,-117.125 -2206.9,-127.082 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="-1940" y1="-100" x2="-1885.66" y2="-190.568"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-1881.37,-187.995 -1880.51,-199.143 -1889.95,-193.14 "/>
+    </g>
+  </g>
+</svg>
