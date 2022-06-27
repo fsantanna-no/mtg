@@ -67,8 +67,8 @@ int main (int argc, char** argv) {
         pico_output((Pico_Output) {
             .tag = PICO_OUTPUT_DRAW,
             .Draw = {
-                .tag = PICO_OUTPUT_DRAW_PIXEL,
-                .Pixel={x,y}
+                .tag = PICO_OUTPUT_DRAW_RECT,
+                .Rect={{x,y},{5,9}}
             }
         });
 
@@ -92,18 +92,36 @@ int main (int argc, char** argv) {
                 if (!has) break;
 
                 uint32_t n = 0;
-                if (inp.type == SDL_QUIT) {
-                    exit(0);
-                }
-                if (inp.type == SDL_KEYDOWN) {
-                    switch (inp.key.keysym.sym) {
-                        case SDLK_LEFT:  { n=EVT_LEFT;  break; }
-                        case SDLK_RIGHT: { n=EVT_RIGHT; break; }
-                        case SDLK_UP:    { n=EVT_UP;    break; }
-                        case SDLK_DOWN:  { n=EVT_DOWN;  break; }
-                        case SDLK_SPACE: { n=EVT_STOP;  break; }
+
+                static int drag_is = 0;
+                static SDL_Point drag_src;
+
+                switch (inp.type) {
+                    case SDL_QUIT:
+                        exit(0);
+                    case SDL_KEYDOWN: {
+                        switch (inp.key.keysym.sym) {
+                            case SDLK_LEFT:  { n=EVT_LEFT;  break; }
+                            case SDLK_RIGHT: { n=EVT_RIGHT; break; }
+                            case SDLK_UP:    { n=EVT_UP;    break; }
+                            case SDLK_DOWN:  { n=EVT_DOWN;  break; }
+                            case SDLK_SPACE: { n=EVT_STOP;  break; }
+                        }
+                        break;
+                    }
+                    case SDL_MOUSEBUTTONUP:
+                        drag_is = 0;
+                        break;
+                    case SDL_MOUSEBUTTONDOWN: {
+                        SDL_Point pt = {inp.button.x, inp.button.y},
+                        if (pico_isPointVsRect(pt, (SDL_Rect)  {x,y,5,9})) {
+                            drag_is = 1;
+                            drag_src = pt;
+                        }
+                        break;
                     }
                 }
+
                 if (n != 0) {
                     pico_output((Pico_Output) {
                         .tag = PICO_OUTPUT_SET,
