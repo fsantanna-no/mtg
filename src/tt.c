@@ -36,15 +36,15 @@ int main (int argc, char** argv) {
 
 	while (1) {
         uint64_t now;
-        int evt;
-        int pay;
-        gals_wait(&now, &evt, &pay);
+        int evt, pay1, pay2;
+        gals_wait(&now, &evt, &pay1, &pay2);
         //printf("now=%ld evt=%d\n", now, evt);
 
         pico_output((Pico_Output) { .tag=PICO_OUTPUT_CLEAR });
 
         if (evt == EVT_DRAG) {
-            x = pay;
+            x = pay1;
+            y = pay2;
         }
 
         pico_output((Pico_Output) {
@@ -86,7 +86,10 @@ int main (int argc, char** argv) {
                         exit(0);
                     case SDL_MOUSEBUTTONUP:
                         if (drag_is) {
-                            gals_emit(EVT_DRAG, x + (inp.button.x-drag_src.x));
+                            gals_emit(EVT_DRAG,
+                                x + (inp.button.x-drag_src.x),
+                                y + (inp.button.y-drag_src.y)
+                            );
                             drag_is = 0;
                         }
                         break;
