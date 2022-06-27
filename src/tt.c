@@ -36,8 +36,8 @@ int main (int argc, char** argv) {
 
 	while (1) {
         uint64_t now;
-        int evt, pay1, pay2;
-        gals_wait(&now, &evt, &pay1, &pay2);
+        int evt, pay1, pay2, pay3;
+        gals_wait(&now, &evt, &pay1, &pay2, &pay3);
         //printf("now=%ld evt=%d\n", now, evt);
 
         pico_output((Pico_Output) { .tag=PICO_OUTPUT_CLEAR });
@@ -88,7 +88,8 @@ int main (int argc, char** argv) {
                         if (drag_is) {
                             gals_emit(EVT_DRAG,
                                 x + (inp.button.x-drag_src.x),
-                                y + (inp.button.y-drag_src.y)
+                                y + (inp.button.y-drag_src.y),
+                                0
                             );
                             drag_is = 0;
                         }
