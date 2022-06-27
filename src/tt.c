@@ -1,34 +1,41 @@
 #if 0
 #!/bin/sh
-gcc -Wall -I ../../gals/src/ `sdl2-config --cflags` ../../gals/src/sdl/gals.c tt.c -o xtt `sdl2-config --libs` -lSDL2_net
+gcc -Wall -I ../../gals/src/ -I ../../pico-sdl/src/ `sdl2-config --cflags` ../../gals/src/sdl/gals.c ../../pico-sdl/src/pico.c tt.c -o xtt `sdl2-config --libs` -lSDL2_net -lSDL2_image -lSDL2_ttf
 exit
 #endif
 
 #include <assert.h>
-#include <SDL2/SDL.h>
+#include "pico.h"
 #include "gals.h"
 
 enum {
-    EVT_NONE, EVT_UP, EVT_DOWN, EVT_RIGHT, EVT_LEFT, EVT_STOP
+    EVT_TIME, EVT_UP, EVT_DOWN, EVT_RIGHT, EVT_LEFT, EVT_STOP
 };
 
 void _assert (int x) {}
 
 int main (int argc, char** argv) {
     assert(argc == 2);
-	assert(SDL_Init(SDL_INIT_VIDEO) == 0);
-
-    SDL_Window*   win = SDL_CreateWindow("SDL", 0,0, 400,400, SDL_WINDOW_SHOWN);
-    SDL_Renderer* ren = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
-
+    pico_open();
     int self = gals_connect(atoi(argv[1]), 20);
     printf(">>> %d\n", self);
 
-    int x = 10;
-    int y = 10;
+    int x = 0;
+    int y = 0;
     int xdir = 0;
     int ydir = 0;
     uint64_t prv = 0;
+
+    pico_output((Pico_Output) {
+        .tag = PICO_OUTPUT_SET,
+        .Set = {
+            .tag = PICO_OUTPUT_SET_COLOR,
+            .Color = {
+                .tag = PICO_OUTPUT_SET_COLOR_CLEAR,
+                .Clear = {0xFF,0xFF,0xFF,0xFF}
+            }
+        }
+    });
 
 	while (1) {
         uint64_t now;
@@ -36,8 +43,7 @@ int main (int argc, char** argv) {
         gals_wait(&now, &evt);
         //printf("now=%ld evt=%d\n", now, evt);
 
-        SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0xFF);
-        SDL_RenderClear(ren);
+        pico_output((Pico_Output) { .tag=PICO_OUTPUT_CLEAR });
 
         switch (evt) {
             case EVT_LEFT:  { xdir=-1; ydir=0; break; }
@@ -47,20 +53,44 @@ int main (int argc, char** argv) {
             case EVT_STOP:  { ydir= 0; xdir=0; printf("PAUSE: t=%ld, xy=(%d,%d)\n",now,x,y); break; }
         }
 
-        SDL_Rect r = { x, y, 10, 10 };
-        SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0xFF);
-        SDL_RenderFillRect(ren, &r);
+        pico_output((Pico_Output) {
+            .tag = PICO_OUTPUT_SET,
+            .Set = {
+                .tag = PICO_OUTPUT_SET_COLOR,
+                .Color = {
+                    .tag = PICO_OUTPUT_SET_COLOR_DRAW,
+                    .Draw = {0xFF,0x00,0x00,0xFF}
+                }
+            }
+        });
+
+        pico_output((Pico_Output) {
+            .tag = PICO_OUTPUT_DRAW,
+            .Draw = {
+                .tag = PICO_OUTPUT_DRAW_PIXEL,
+                .Pixel={x,y}
+            }
+        });
 
         if (now!=prv && evt==0) {
-            x += 5 * xdir;
-            y += 5 * ydir;
+            x += 1 * xdir;
+            y -= 1 * ydir;
         }
         prv = now;
-
+        //printf(">>> (%d,%d)\n", x, y);
 
         {
             SDL_Event inp;
-            while (SDL_PollEvent(&inp)) {
+            while (1) {
+                int has = pico_input(&inp, (Pico_Input){
+                    .tag = PICO_INPUT_EVENT,
+                    .Event = {
+                        .tag = PICO_INPUT_EVENT_POLL,
+                        .type = SDL_ANY
+                    }
+                });
+                if (!has) break;
+
                 uint32_t n = 0;
                 if (inp.type == SDL_QUIT) {
                     exit(0);
@@ -75,15 +105,29 @@ int main (int argc, char** argv) {
                     }
                 }
                 if (n != 0) {
-                    SDL_Rect r = { 190, 190, 20, 20 };
-                    SDL_SetRenderDrawColor(ren, 0x77,0x77,0x77,0x77);
-                    SDL_RenderFillRect(ren, &r);
+                    pico_output((Pico_Output) {
+                        .tag = PICO_OUTPUT_SET,
+                        .Set = {
+                            .tag = PICO_OUTPUT_SET_COLOR,
+                            .Color = {
+                                .tag = PICO_OUTPUT_SET_COLOR_DRAW,
+                                .Draw = {0x77,0x77,0x77,0x77}
+                            }
+                        }
+                    });
+
+                    pico_output((Pico_Output) {
+                        .tag = PICO_OUTPUT_DRAW,
+                        .Draw = {
+                            .tag = PICO_OUTPUT_DRAW_PIXEL,
+                            .Pixel={0,0}
+                        }
+                    });
+
                     gals_emit(n);
                 }
             }
         }
-
-        SDL_RenderPresent(ren);
 	}
 
 	gals_disconnect();
